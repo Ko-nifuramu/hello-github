@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution{
+class Recursion-problem-black-jack.java{
     public static boolean winnerBlackjack(String[] playerCards, String[] houseCards){
         int playerPoint=0;
         int dealerPoint=0;
@@ -47,4 +47,8 @@ class Solution{
         else if((int)number == (int)'K') return 13;
         else return Character.getNumericValue(number); 
     }
+   public static void main(String[] args){
+        winnerBlackjack(["♣4","♥7","♥7"],["♠Q","♣J"])//->true
+        return 0;
+   }
 }
